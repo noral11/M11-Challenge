@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gulp Roast Coffee Page</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark custom-bg-blue">
+    <div class="container">
+      <a class="navbar-brand" href="https://uxuicurriculum.wixsite.com/gulproast">
+        <img src="https://assets.codepen.io/6306176/gulp-logo-light.png" alt="Gulp Roast Logo" width="100">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="https://uxuicurriculum.wixsite.com/gulproast">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://uxuicurriculum.wixsite.com/gulproast">Locations</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://uxuicurriculum.wixsite.com/gulproast">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#">Coffee</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://uxuicurriculum.wixsite.com/gulproast">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Coffee Products Section -->
+  <main class="container my-5 main-bkgd">
+    <div class="row">
+      <!-- Product 1: Columbian-Blended Espresso Beans -->
+      <div class="col-12 col-md-4 mb-4">
+        <div class="product-box">
+          <img src="https://assets.codepen.io/6306176/gulp-espresso.jpg" alt="Columbian-Blended Espresso Beans" class="img-fluid">
+          <h2>Columbian-Blended Espresso Beans</h2>
+          <p class="product-description">Bourbon / Cherry / Milk Chocolate</p>
+          <a href="Products Details" class="cta">View Details</a>
+        </div>
+      </div>
+
+      <!-- Product 2: Triple-Blended Coffee Beans -->
+      <div class="col-12 col-md-4 mb-4">
+        <div class="product-box">
+          <img src="https://assets.codepen.io/6306176/gulp-triple-blended.jpg" alt="Triple-Blended Coffee Beans" class="img-fluid">
+          <h2>Triple-Blended Coffee Beans</h2>
+          <p class="product-description">Dark Chocolate / Caramel / Papaya</p>
+          <a href="#" class="cta">View Details</a>
+        </div>
+      </div>
+
+      <!-- Product 3: Lightly Roasted Coffee Beans -->
+      <div class="col-12 col-md-4 mb-4">
+        <div class="product-box">
+          <img src="https://assets.codepen.io/6306176/gulp-light-roast.jpg" alt="Lightly Roasted Coffee Beans" class="img-fluid">
+          <h2>Lightly Roasted Coffee Beans</h2>
+          <p class="product-description">Cherry / Mangosteen / Fig</p>
+          <a href="#" class="cta">View Details</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="custom-bg-blue text-white py-3">
+    <div class="container">
+      <p class="mb-2">&copy; 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.</p>
+      <p class="mb-0"><small>This site is for educational purposes only. This is not a coffee products website. This is a fictitious company and scenario intended only for internal academic purposes.</small></p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

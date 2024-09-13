@@ -1,0 +1,302 @@
+/* Reset and base styles */
+body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    line-height: 2;
+    color: #59331d;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Typography */
+.heading-primary {
+    font-family: 'Poppins', sans-serif;
+    color: #082B59;
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.heading-secondary,
+.heading-tertiary {
+    font-family: 'Poppins', sans-serif;
+    color: #d98555;
+}
+
+.link {
+    color: #59331d;
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    color: #d98555;
+}
+
+/* Layout components */
+.header {
+    background-color: #082B59;
+    padding: 10px;
+}
+
+.header__title {
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.main-background {
+    padding: 30px 0;
+    background: url('https://assets.codepen.io/6306176/gulp-bean-bkgd.jpg') no-repeat right bottom;
+    background-size: cover;
+}
+
+/* Product component */
+.product-card {
+    background-color: rgba(89, 51, 29, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    color: #f2f2f2;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card__image {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Button components */
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn--primary {
+    background-color: #082B59;
+    color: #f2f2f2;
+    border: 3px solid #082B59;
+}
+
+.btn--primary:hover {
+    background-color: #f2f2f2;
+    color: #082B59;
+}
+
+.btn--secondary {
+    background-color: #D98555;
+    color: #f2f2f2;
+    border: 3px solid #D98555;
+}
+
+.btn--secondary:hover {
+    background-color: #f2f2f2;
+    color: #D98555;
+}
+
+/* Footer component */
+.footer {
+    background-color: #082B59;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    margin-top: auto;
+}
+
+.footer__link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer__link:hover {
+    color: #d98555;
+}
+
+.custom-bg-blue {
+    background-color: #082b59;
+}
+
+/* New styles for product boxes and buttons */
+.product-box {
+    flex: 1 1 calc(33% - 20px);
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    background-color: #f2f2f2;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.product-box:hover {
+    transform: translateY(-5px);
+}
+
+.product-box img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.cta, .button {
+    display: inline-block;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.cta {
+    background-color: #082B59;
+    color: #f2f2f2;
+    border: 3px solid #082B59;
+}
+
+/* Hover effect for the button */
+.cta:hover {
+    background-color: #D38555;
+    border-color: #D38555;
+    color: #f2f2f2;
+}
+
+/* Additional styles to ensure proper layout */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-md-4 {
+    display: flex;
+}
+
+/* New styles for navbar dropdown hover */
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+    color: #D89555 !important;
+}
+
+/* For the active nav item */
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #D89555 !important;
+}
+
+/* For dropdown items */
+.navbar-dark .navbar-nav .dropdown-menu .dropdown-item:hover,
+.navbar-dark .navbar-nav .dropdown-menu .dropdown-item:focus {
+    color: #D89555 !important;
+    background-color: rgba(216, 149, 85, 0.1);
+}
+
+/* Update the existing style for product box headers */
+.product-box h2 {
+    color: #D38555;
+    margin-top: 1rem;
+    font-size: 1.5rem; /* Adjust this value as needed */
+}
+
+/* Update the style for product descriptions */
+.product-description {
+    text-transform: capitalize;
+    font-size: 0.9rem;
+    color: #666;
+    letter-spacing: 0.05em;
+    margin-bottom: 1rem;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+footer small {
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+/* Bootstrap Grid System */
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-md-4 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+    .col-md-4 {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+}
+
+/* Utility classes */
+.my-5 {
+    margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+}
+
+.py-3 {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
+
+/* ... (other utility classes as needed) ... */
+
